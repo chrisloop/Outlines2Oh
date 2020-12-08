@@ -19,7 +19,7 @@ float3 DecodeNormal(float4 enc)
     return n;
 } 
 
-void Outlines_float(float3 WorldPosition, float2 UV, float3 Color, float OutlineThickness, float3 OutlineColor, float OutlineDepthMultiplier, float OutlineDepthBias, float OutlineNormalMultiplier, float OutlineNormalBias, 
+void Outlines_float(float3 WorldPosition, float2 ScreenPosition, float2 UV, float3 Color, float OutlineThickness, float3 OutlineColor, float OutlineDepthMultiplier, float OutlineDepthBias, float OutlineNormalMultiplier, float OutlineNormalBias, 
     out float Depth, out float3 Normal, out float DepthOutline, out float NormalOutline, out float Outline, out float3 MainLightShadow, out float3 Detail, out float3 Composite)
 {
     // sample distance
@@ -37,7 +37,7 @@ void Outlines_float(float3 WorldPosition, float2 UV, float3 Color, float Outline
     // base (center) values
     Depth = SAMPLE_TEXTURE2D(_CameraDepthTexture, sampler_CameraDepthTexture, UV).r;
     Normal = DecodeNormal(SAMPLE_TEXTURE2D(_CameraDepthNormalsTexture, sampler_CameraDepthNormalsTexture, UV));
-    Detail = SAMPLE_TEXTURE2D(_CameraColorTexture, sampler_CameraColorTexture, UV);
+    Detail = SAMPLE_TEXTURE2D(_CameraColorTexture, sampler_CameraColorTexture, UV); // r alpha map for detail, b SSAO
 
     float depthDifference = 0;
     float normalDifference = 0;
@@ -80,11 +80,12 @@ void Outlines_float(float3 WorldPosition, float2 UV, float3 Color, float Outline
     normalDifference = pow(normalDifference, OutlineNormalBias);
     NormalOutline = normalDifference;
 
-
-
+    // combine outlines
     Outline = max(max(DepthOutline, NormalOutline), detailDifference0);
 
-    Composite = lerp(Color.rgb, OutlineColor, Outline) * MainLightShadow;
+    // Combine combine outlines with toon lighting and AO
+    Composite = lerp(Color.rgb, OutlineColor, Outline) * MainLightShadow * (1 - Detail.g);
 
+    //Outline = SSAO;
 
 }
