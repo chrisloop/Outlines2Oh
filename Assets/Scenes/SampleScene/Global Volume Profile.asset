@@ -15,8 +15,8 @@ MonoBehaviour:
   active: 1
   m_AdvancedMode: 0
   mode:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 2
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32,6 +32,7 @@ MonoBehaviour:
   components:
   - {fileID: 3994728983276810601}
   - {fileID: 7952713535502488087}
+  - {fileID: -1149299927208447788}
 --- !u!114 &3994728983276810601
 MonoBehaviour:
   m_ObjectHideFlags: 3
