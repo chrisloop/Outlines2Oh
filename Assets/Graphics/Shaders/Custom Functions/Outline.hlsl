@@ -51,7 +51,6 @@ void Outlines_float(float3 WorldPosition, float2 ScreenPosition, float2 UV, floa
         ShadowSamplingData m_shadowSamplingData = GetMainLightShadowSamplingData();
         half shadowStrength = GetMainLightShadowStrength();
         MainLightShadow = SampleShadowmap(m_shadowCoord, TEXTURE2D_ARGS(_MainLightShadowmapTexture, sampler_MainLightShadowmapTexture), m_shadowSamplingData, shadowStrength, false);
-        //MainLightShadow = 1 - MainLightShadow; 
     #endif
 
     for(int i = 0; i < 4 ; i++)
@@ -85,7 +84,4 @@ void Outlines_float(float3 WorldPosition, float2 ScreenPosition, float2 UV, floa
 
     // Combine combine outlines with toon lighting and AO
     Composite = lerp(Color.rgb, OutlineColor, Outline) * MainLightShadow * (1 - Detail.g);
-
-    //Outline = SSAO;
-
 }
