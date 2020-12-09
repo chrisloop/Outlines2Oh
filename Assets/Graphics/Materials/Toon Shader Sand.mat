@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Toon Shader Sand
+  m_Shader: {fileID: -6465566751694194690, guid: 254373ccd73734e45a53e80c09b46b1d, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SampleTexture2D_1880709c679f49aeacfafb921bc9e329_Texture_1:
+        m_Texture: {fileID: 2800000, guid: a3f7580d089d26a48bd4d0031a538be7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_c4d23a3d777547cea3ffb11237c32f08_Texture_1:
+        m_Texture: {fileID: 2800000, guid: d3fafa3eafed388418d9686ae6d6f3ad, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_e1e078b63cff446db88abaea42af79d3_Texture_1:
+        m_Texture: {fileID: 2800000, guid: bed77d36a98250f498cc0494634d2934, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_c8de29d8ac1c41daad73ff5780d897bc_Texture_1:
+        m_Texture: {fileID: 2800000, guid: d3fafa3eafed388418d9686ae6d6f3ad, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_06c5f768b93040f28afce6cb86af660a: 0
+    - Vector1_35c77dbe812442f7b5810ab6a3799581: 0.7
+    - Vector1_3f4fac41ee72468ca7a430693236b6cb: 0
+    - Vector1_453e8db3767a41f89bd404e9a51e0943: 1
+    - Vector1_4ae748a3549d44a1a4d7069b20e39536: 5
+    - Vector1_5f132daefaa341f4b3bf3abd8006a5eb: 0.101
+    - Vector1_612d80a623b648d8b2c7c3cc0c334c9c: 100
+    - Vector1_7d96d40990844a28ae46b90f65396337: 0
+    - Vector1_7e62aa028b624313ad6a911f6044812e: 8
+    - Vector1_8055fe5f06574ae08c1c362b4913e03b: 1
+    - Vector1_e4c8545ca9f64ee5bd529fd192879733: 1
+    - Vector1_fdf56528ef6e4b50b6522bed8bd4ff91: 1
+    m_Colors:
+    - Color_0e3cb785fe3846f28a5763bd38b82551: {r: 0.376, g: 0.1810051, b: 0.06916982, a: 1}
+    - Color_1: {r: 1, g: 0.36448598, b: 0, a: 0}
+    - Color_58a40a2a875f43429412d1d4064e2d61: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

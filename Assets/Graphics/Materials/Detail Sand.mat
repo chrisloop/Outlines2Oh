@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Detail Sand
+  m_Shader: {fileID: -6465566751694194690, guid: 603e4fbacd561524d928dd3fce8f44bd, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_6df3a602621e41dca2e4f288a3134e79:
+        m_Texture: {fileID: 2800000, guid: bed1a534626d1c245bb810a9d747d767, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_d311274a5c5541eeb0039f1117d39ad2_Texture_1:
+        m_Texture: {fileID: 2800000, guid: bed1a534626d1c245bb810a9d747d767, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Triplanar_634a2838d0cf4d7faf8976d2f8e9da4b_Texture_1:
+        m_Texture: {fileID: 2800000, guid: bed1a534626d1c245bb810a9d747d767, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_140f772a4b064980ace3bcd0c773be68: 0.79
+    - Vector1_25a91c55335b4a13b5033184bb3ab967: 0.78
+    - Vector1_3003d30f275542868c05409549762efa: 0.47
+    - Vector1_61aade0dddfb44e89404d1190df200b0: 2.59
+    - Vector1_94bb3688e8734550abef163fecab1a5a: 0.15
+    - Vector1_986a01aee0a549e580595a4fb924712d: 0.3
+    - Vector1_f53351458cbe49d48b7048cc001ff6f0: 0.16
+    m_Colors: []
+  m_BuildTextureStacks: []
