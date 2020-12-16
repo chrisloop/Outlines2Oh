@@ -8,6 +8,9 @@
         },
         {
             "m_Id": "f53351458cbe49d48b7048cc001ff6f0"
+        },
+        {
+            "m_Id": "ebafa641ccfc4ac69f58e16a2825b682"
         }
     ],
     "m_Keywords": [],
@@ -44,6 +47,9 @@
         },
         {
             "m_Id": "17c6c349b986416795e834bf9c91d89c"
+        },
+        {
+            "m_Id": "775db41057074c3f8eb404290af4776b"
         }
     ],
     "m_GroupDatas": [],
@@ -108,6 +114,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "775db41057074c3f8eb404290af4776b"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "634a2838d0cf4d7faf8976d2f8e9da4b"
+                },
+                "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "a0c3e3db97154b0eb23f97c6c65ce583"
                 },
                 "m_SlotId": 0
@@ -150,8 +170,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 143.0,
-            "y": 34.000003814697269
+            "x": -26.999975204467775,
+            "y": -97.00001525878906
         },
         "m_Blocks": [
             {
@@ -167,8 +187,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 143.0,
-            "y": 234.0
+            "x": -26.999975204467775,
+            "y": 103.0
         },
         "m_Blocks": [
             {
@@ -224,7 +244,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "0b3e6656a13d42af8dfb7f0112226d0e",
     "m_Id": 0,
-    "m_DisplayName": "Tiling",
+    "m_DisplayName": "Detail Texture Tiling",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -278,10 +298,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -736.0000610351563,
-            "y": 189.00001525878907,
+            "x": -721.0000610351563,
+            "y": 199.0,
             "width": 211.0,
-            "height": 34.0
+            "height": 34.000003814697269
         }
     },
     "m_Slots": [
@@ -342,9 +362,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -736.0000610351563,
-            "y": 32.00001907348633,
-            "width": 104.99999237060547,
+            "x": -791.0000610351563,
+            "y": 17.000015258789064,
+            "width": 180.0,
             "height": 34.0
         }
     },
@@ -687,10 +707,10 @@
         "m_Expanded": false,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -589.0000610351563,
-            "y": -10.999977111816407,
-            "width": 144.99998474121095,
-            "height": 130.0
+            "x": -599.0001220703125,
+            "y": -56.000003814697269,
+            "width": 169.0,
+            "height": 154.00001525878907
         }
     },
     "m_Slots": [
@@ -773,6 +793,52 @@
     "m_SlotType": 0,
     "m_Hidden": false,
     "m_ShaderOutputName": "Sampler",
+    "m_StageCapability": 3
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "775db41057074c3f8eb404290af4776b",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -768.0000610351563,
+            "y": -33.000003814697269,
+            "width": 157.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "7bcc7a7e38d1491891011d1de41973b6"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "ebafa641ccfc4ac69f58e16a2825b682"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
+    "m_ObjectId": "7bcc7a7e38d1491891011d1de41973b6",
+    "m_Id": 0,
+    "m_DisplayName": "Detail Texture",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
     "m_StageCapability": 3
 }
 
@@ -914,9 +980,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -670.0000610351563,
-            "y": 252.99998474121095,
-            "width": 144.99998474121095,
+            "x": -655.0000610351563,
+            "y": 263.0000305175781,
+            "width": 145.0,
             "height": 130.0
         }
     },
@@ -1042,8 +1108,8 @@
         "m_Expanded": false,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -444.00006103515627,
-            "y": 205.99996948242188,
+            "x": -440.9999694824219,
+            "y": 173.00001525878907,
             "width": 156.0,
             "height": 181.0
         }
@@ -1180,13 +1246,13 @@
     },
     "m_Name": "Combine",
     "m_DrawState": {
-        "m_Expanded": true,
+        "m_Expanded": false,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -158.0,
-            "y": 200.0,
-            "width": 208.0,
-            "height": 350.0
+            "x": -224.0,
+            "y": 98.00001525878906,
+            "width": 133.0,
+            "height": 118.0
         }
     },
     "m_Slots": [
@@ -1214,7 +1280,7 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": true,
+    "m_PreviewExpanded": false,
     "m_CustomColors": {
         "m_SerializableColors": []
     }
@@ -1256,6 +1322,29 @@
         "z": 0.0
     },
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
+    "m_ObjectId": "ebafa641ccfc4ac69f58e16a2825b682",
+    "m_Guid": {
+        "m_GuidSerialized": "e862201d-2dc1-4f7e-a819-0425a768ba52"
+    },
+    "m_Name": "Detail Texture",
+    "m_DefaultReferenceName": "Texture2D_ebafa641ccfc4ac69f58e16a2825b682",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"a3f7580d089d26a48bd4d0031a538be7\",\"type\":3}}",
+        "m_Guid": ""
+    },
+    "m_Modifiable": true,
+    "m_DefaultType": 0
 }
 
 {
@@ -1303,7 +1392,7 @@
     "m_Guid": {
         "m_GuidSerialized": "77d73e6b-76bc-4f38-879f-56db64528446"
     },
-    "m_Name": "Tiling",
+    "m_Name": "Detail Texture Tiling",
     "m_DefaultReferenceName": "Vector1_f53351458cbe49d48b7048cc001ff6f0",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,

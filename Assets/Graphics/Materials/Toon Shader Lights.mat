@@ -8,12 +8,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Toon Shader Lights
-  m_Shader: {fileID: -6465566751694194690, guid: 254373ccd73734e45a53e80c09b46b1d, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 6cd0dc119da718f4897c2a4382201f0b, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -51,6 +51,7 @@ Material:
     - Vector1_06c5f768b93040f28afce6cb86af660a: 0
     - Vector1_35c77dbe812442f7b5810ab6a3799581: 0.3
     - Vector1_3f4fac41ee72468ca7a430693236b6cb: 0
+    - Vector1_41ee9d41bc724e89bdc15556717e62c0: 1
     - Vector1_453e8db3767a41f89bd404e9a51e0943: 1
     - Vector1_4ae748a3549d44a1a4d7069b20e39536: 8
     - Vector1_5f132daefaa341f4b3bf3abd8006a5eb: 0.14
@@ -58,6 +59,7 @@ Material:
     - Vector1_7d96d40990844a28ae46b90f65396337: 0
     - Vector1_7e62aa028b624313ad6a911f6044812e: 4
     - Vector1_8055fe5f06574ae08c1c362b4913e03b: 0.96
+    - Vector1_b81a695deb9b4d5c8d5a61ce5b6d1d69: 0.1
     - Vector1_e4c8545ca9f64ee5bd529fd192879733: 1
     - Vector1_fdf56528ef6e4b50b6522bed8bd4ff91: 1
     m_Colors:
